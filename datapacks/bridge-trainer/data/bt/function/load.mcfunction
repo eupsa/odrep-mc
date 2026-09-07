@@ -3,6 +3,7 @@ scoreboard objectives add bt.time dummy
 scoreboard objectives add bt.best dummy {"text":"Melhor tempo (ticks)","color":"aqua"}
 scoreboard objectives add bt.run dummy
 scoreboard objectives add bt.y dummy
+scoreboard objectives add bt.n dummy
 scoreboard objectives add bt.last dummy
 scoreboard objectives add bridge trigger
 
