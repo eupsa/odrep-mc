@@ -3,6 +3,10 @@
 Só `*.example.yml` é versionado. Os `.jar` ficam em `run/plugins/` (ignorados).
 Nunca ponha `.jar` nesta pasta — o servidor carrega de `run/plugins/`.
 
+`setup` copia cada `Nome.example.yml` → `run/plugins/Nome/config.yml` (sem
+sobrescrever). Já versionados: `ViaVersion`, `TAB` (scoreboard), `DiscordSRV`
+(sem o token — preencha em `run/`).
+
 ## Stack (Paper 1.21.11 / Java 21)
 
 ### Automático — `setup` baixa do Modrinth
