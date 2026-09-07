@@ -50,6 +50,13 @@ for f in plugins/*.example.yml; do
   cp -n "$f" "$PLUGINS/$base/config.yml" 2>/dev/null || true
 done
 
+# datapacks -> run/world/datapacks/ (mundo precisa existir)
+if [ -d datapacks ] && [ -d "$RUN/world" ]; then
+  mkdir -p "$RUN/world/datapacks"
+  cp -r datapacks/* "$RUN/world/datapacks/" 2>/dev/null || true
+  echo "==> datapacks copiados (rode: datapack enable \"file/bridge-trainer\")"
+fi
+
 echo
 echo "==> DOWNLOAD MANUAL (não têm API aberta) — salve os .jar em $PLUGINS/:"
 for entry in $MANUAL_PLUGINS; do

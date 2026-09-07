@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "description": "odrep bridge trainer",
+    "pack_format": 88,
+    "supported_formats": { "min_inclusive": 26, "max_inclusive": 250 }
+  }
+}

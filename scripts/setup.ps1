@@ -57,6 +57,14 @@ Get-ChildItem 'plugins\*.example.yml' -ErrorAction SilentlyContinue | ForEach-Ob
   CopyNew $_.FullName (Join-Path $d 'config.yml')
 }
 
+# datapacks -> run\world\datapacks\ (mundo precisa existir)
+$worldDp = Join-Path $run 'world\datapacks'
+if ((Test-Path 'datapacks') -and (Test-Path (Join-Path $run 'world'))) {
+  New-Item -ItemType Directory -Force -Path $worldDp | Out-Null
+  Copy-Item 'datapacks\*' $worldDp -Recurse -Force
+  Write-Host '==> datapacks copiados (rode: datapack enable "file/bridge-trainer")'
+}
+
 Write-Host ''
 Write-Host '==> DOWNLOAD MANUAL (salve os .jar em run\plugins\):'
 ($env2['MANUAL_PLUGINS'] -split '\s+' | Where-Object { $_ }) | ForEach-Object {
