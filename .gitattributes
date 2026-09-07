@@ -1,2 +1,14 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Normaliza para LF no repo
+* text=auto eol=lf
+
+# Scripts que rodam no Linux (VM Oracle) — nunca CRLF
+*.sh            text eol=lf
+scripts/*.env   text eol=lf
+
+# Datapack — mantém LF
+*.mcfunction    text eol=lf
+*.mcmeta        text eol=lf
+
+# Scripts do Windows — CRLF
+*.bat           text eol=crlf
+*.ps1           text eol=crlf
