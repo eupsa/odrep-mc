@@ -1,7 +1,6 @@
 # (re)inicia uma tentativa para @s
 execute at @e[tag=bt.start,limit=1] run tp @s ~ ~ ~ facing entity @e[tag=bt.end,limit=1] feet
-# limpa a ponte colocada (relativo ao marcador de largada)
-execute at @e[tag=bt.start,limit=1] run fill ~-1 ~-1 ~-3 ~52 ~20 ~3 minecraft:air replace minecraft:white_concrete
+function bt:clear
 gamemode survival @s
 clear @s minecraft:white_concrete
 give @s minecraft:white_concrete 64

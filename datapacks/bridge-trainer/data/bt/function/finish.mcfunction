@@ -9,5 +9,8 @@ tellraw @s ["",{"text":"✔ ","color":"green"},{"text":"tempo: ","color":"gray"}
 title @s title {"text":"✔","color":"green"}
 title @s subtitle [{"score":{"name":"@s","objective":"bt.last"},"color":"white"},{"text":" ticks","color":"gray"}]
 
+playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1
+execute at @e[tag=bt.end,limit=1] run function bt:fireworks
+
 # reinicia automatico
 function bt:start

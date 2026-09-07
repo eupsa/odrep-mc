@@ -8,13 +8,14 @@ Depois, no console: `datapack enable "file/bridge-trainer"` e `reload`
 
 ## Instalar a pista (1x, você OP)
 
-1. Vá para uma área vazia e alta (ou o void do lobby), **de frente para +X**
-   (aperte F3 e deixe `Facing: ... (+X)`).
+1. Vá para uma área vazia e alta (ou o void do lobby) e **olhe na direção onde
+   quer a pista** (qualquer um dos 4 lados — trava no cardeal mais próximo).
 2. Rode: `/function bt:setup`
-   - cria a plataforma de largada, a de chegada 50 blocos à frente, e os
-     marcadores.
-3. Pronto. Pra mover a pista depois, é só rodar `/function bt:setup` de novo
-   noutro lugar.
+   - cria a largada, a plataforma de chegada 50 blocos à frente e os marcadores,
+     no sentido pra onde você estava olhando.
+3. Pra mover/re-orientar, rode `/function bt:setup` de novo noutro lugar.
+
+O `/trigger bridge` já te vira de frente pro alvo — não precisa alinhar a mira.
 
 ## Jogar
 
