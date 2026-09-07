@@ -1,0 +1,14 @@
+# Copiado para run/plugins/ViaVersion/config.yml pelo setup.
+# Deixa clientes 1.8.9 .. atual entrarem num Paper 1.21.8.
+# ViaBackwards e ViaRewind NÃO precisam de config — só do .jar.
+check-for-updates: false
+prevent-collision: true
+auto-team: true
+nms-player-ticking: true
+item-cache: true
+chunk-border-fix: false
+1_9-hitbox: false          # mantém hitbox 1.8 (importante p/ PvP)
+1_14-hitbox: false
+blockconnection-method: packet
+serverside-blockconnections: true
+suppress-conversion-warnings: false

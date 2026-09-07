@@ -1,0 +1,81 @@
+# ---------------------------------------------------------------------------
+# Minecraft server — arquivos gerados / runtime (NÃO versionar)
+# ---------------------------------------------------------------------------
+
+# Binários do servidor
+*.jar
+!build-tools/**/*.jar          # exceção: se você guardar um builder específico
+server.jar
+paper*.jar
+spigot*.jar
+purpur*.jar
+fabric-server-launch.jar
+forge-*.jar
+bukkit*.jar
+
+# Aceite da EULA (cada um aceita localmente)
+eula.txt
+
+# Mundos e dados de jogo
+/world/
+/world_nether/
+/world_the_end/
+/*/world/
+/backups/
+*.mca
+*.dat
+*.dat_old
+session.lock
+level.dat*
+
+# Logs e crash reports
+/logs/
+/crash-reports/
+*.log
+*.log.gz
+hs_err_pid*.log
+
+# Cache / dados de plugins pesados
+/cache/
+/versions/
+/libraries/
+/.paper-remapped/
+/plugins/**/*.jar          # jars de plugins são baixados, não versionados
+/plugins/**/cache/
+/plugins/dynmap/
+/plugins/*/data/
+/plugins/*/*.db
+/plugins/*/*.sqlite
+/plugins/*/logs/
+
+# Config gerada em runtime (versione config/ e plugins/*.example.yml)
+/run/
+/plugins/**/*.yml.bak
+/bukkit.yml
+/commands.yml
+/help.yml
+/permissions.yml
+/wepif.yml
+/usercache.json
+/ops.json.bak
+banned-*.json
+whitelist.json
+
+# ---------------------------------------------------------------------------
+# Sistema operacional / editores
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.idea/
+.vscode/
+*.iml
+
+# ---------------------------------------------------------------------------
+# Ferramentas locais
+# ---------------------------------------------------------------------------
+/run/
+/.env
+*.local

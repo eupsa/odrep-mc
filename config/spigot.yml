@@ -1,0 +1,33 @@
+# Practice tweaks. Chaves ausentes são regeneradas pelo Spigot.
+settings:
+  bungeecord: false
+  restart-on-crash: true
+  restart-script: ./start.sh
+  timeout-time: 60
+  netty-threads: 4
+messages:
+  whitelist: Servidor fechado no momento.
+  unknown-command: Comando desconhecido.
+  server-full: O servidor está cheio.
+world-settings:
+  default:
+    mob-spawn-range: 2
+    entity-activation-range:
+      animals: 8
+      monsters: 8
+      misc: 4
+    entity-tracking-range:
+      players: 96
+      animals: 48
+      misc: 32
+      other: 48
+    ticks-per:
+      hopper-transfer: 8
+      hopper-check: 8
+    hopper-amount: 1
+    merge-radius:
+      item: 3.5
+      exp: 4.0
+    item-despawn-rate: 1200
+    arrow-despawn-rate: 300
+    nerf-spawner-mobs: true
